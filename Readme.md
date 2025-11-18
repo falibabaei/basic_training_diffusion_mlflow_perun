@@ -1,6 +1,7 @@
 # Diffusion Model Training Boilerplate
 
-**`basic_training_diffusion.py`**  
+**`basic_training_diffusion.py`** 
+
 A minimal script for training diffusion models with 🤗 Diffusers, MLflow experiment tracking, and Perun energy/performance monitoring.
 In `basic_training_diffusion.py`, see steps (1) to (8) for how MLflow and Perun are integrated into the script. 
 ---

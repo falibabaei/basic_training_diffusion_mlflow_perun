@@ -128,7 +128,7 @@ def evaluate(config, epoch, pipeline):
     image_grid.save(f"{test_dir}/{epoch:04d}.png")
 
 
-#this decorator is related to perun and start measure the energy consumption
+# This decorator is provided by Perun and starts measuring energy consumption for the wrapped function.
 @monitor()
 def train_loop(config, model, noise_scheduler, optimizer, train_dataloader, lr_scheduler):
     # Initialize accelerator and tensorboard logging

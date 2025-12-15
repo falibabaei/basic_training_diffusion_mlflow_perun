@@ -1,9 +1,11 @@
 #!/bin/bash
 #SBATCH --partition=normal
 #SBATCH --time=5:00:00
-#SBATCH --gres=gpu:2     
-#SBATCH --cpus-per-task=4
-#SBATCH --nodes=1 #change this to >1 if you want to use more than one node
+#SBATCH --gres=gpu:2                # number of GPUs per node
+#SBATCH --cpus-per-task=4           # number of cores per tasks
+#SBATCH --ntasks-per-node=1         # number of MP tasks
+
+#SBATCH --nodes=1                  #Number of node. change this to >1 if you want to use more than one node
 
 module load devel/cuda/12.9
 source "$HOME"/nvflare/bin/activate

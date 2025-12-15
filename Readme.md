@@ -37,7 +37,7 @@ python basic_training_diffusion.py
 
 For running the trainer on the HAICORE cluster, use the `job_submission.sh` script:
 ```bash 
-./job_submission.sh
+sbatch job_submission.sh
 ```
 
 **Ensure your `.env` variables are loaded in your shell before submitting the job.**
